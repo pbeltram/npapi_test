@@ -2,6 +2,11 @@
 
 Wire speed 119Mbytes/sec (970Mbits/sec) continuous data capture and recording from Zynq-7000 GEM 1Gb Ethernet controller.
 
+It is pure embedded Linux solution with no overclocking. No special FPGA IP is required.
+
+During data transfer the Ethernet link is normally usable for other Ethernet protocols (ssh, http, ...), of course within remaining cca 30Mbits/sec bandwidth.
+CPU load on RedPitaya during data transfer is cca 4% on CPU0 and cca 40% on CPU1.
+
 Implementation is using UDP data transfer with addition that during data capturing it will request re-transmission of missing UDP packets. Result is continuous data capturing without data lost.
 
 Demo for RedPitaya demonstrates continuous raw ADC 16bit data capture at up to 59.5MSPS for single 16bit ADC channel and up to 29.7MSP for both ADC channels.
