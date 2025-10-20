@@ -1,0 +1,10 @@
+
+# Python
+*.pyc
+.settings/
+
+#
+*.dmp
+*.dat
+
+!.gitignore

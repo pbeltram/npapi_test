@@ -1,0 +1,16 @@
+build/
+bin/
+*.ltx
+bootgen_log.txt
+*.nky
+*.pub
+*.pem
+*.nkz
+*.img
+
+#
+# git files that we don't want to ignore even it they are dot-files
+#
+!.gitignore
+!.mailmap
+

@@ -1,0 +1,13 @@
+temp/
+*.org
+*.delme
+*.log
+*.jou
+.metadata/
+RemoteSystemsTempFiles/
+Packages/
+webtalk/
+
+# Xilinx
+.Xil
+
