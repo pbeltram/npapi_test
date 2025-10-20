@@ -1,11 +1,19 @@
 ## npapi (Network packet API)
 
+Wire speed 119Mbytes/sec (970Mbits/sec) continuous data capture and recording from Zynq-7000 GEM 1Gb Ethernet controller.
+
+Implementation is using UDP data transfer with addition that during data capturing it will request re-transmission of missing UDP packets. Result is continuous data capturing without data lost.
+
+Demo for RedPitaya demonstrates continuous raw ADC 16bit data capture at up to 59.5MSPS for single 16bit ADC channel and up to 29.7MSP for both ADC channels.
+
+Demo for ZyboZ7-20 demonstrates continuous DIO capture at up to 59.5MSPS for 16bit DIO inputs and up to 29.7MSP for 32 bit DIO inputs from 4 PMOD connectors.
+
 **Directories:**
 
+- `./pics/`. Pictures with references from this README.
 - `./fpga/`. FPGA block designs. (description in [README.md](./fpga/README.md)).
 - `./bin/`. Prebuilt and staged PC binary files to control and capture data blocks for Linux and Windows (description in [README.md](./bin/README.md)).
 - `./lnx/`. Files for Zynq 7000 boards. (description in [README.md](./lnx/README.md)).
-- `./pics/`. Pictures with references from this README.
 - `./python/`. Python script to analyze captured data (description in [README.md](./python/README.md)).
 
 #### Zynq 7000 Board configuration
